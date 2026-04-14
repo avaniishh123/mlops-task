@@ -4,6 +4,14 @@ A minimal, reproducible batch job that computes a rolling-mean trading signal
 from OHLCV data and emits structured metrics + logs.
 
 ---
+## Features
+
+- Deterministic runs via YAML config + random seed
+- Robust input validation (CSV + schema checks)
+- Rolling mean signal generation
+- Structured metrics output (`metrics.json`)
+- Detailed logging (`run.log`)
+- Fully Dockerized for one-command execution
 
 ## Project structure
 
