@@ -1,0 +1,8 @@
+2026-04-14 22:09:09,307 [INFO] Job started.
+2026-04-14 22:09:09,309 [INFO] Config loaded — version=v1  seed=42  window=5
+2026-04-14 22:09:09,312 [INFO] NumPy random seed set to 42.
+2026-04-14 22:09:09,335 [INFO] Dataset loaded: 10000 rows, columns=['open', 'high', 'low', 'close', 'volume']
+2026-04-14 22:09:09,340 [INFO] Rolling mean computed (window=5). Valid rows: 9996 / 10000.
+2026-04-14 22:09:09,340 [INFO] Signal generated. rows_processed=10000  signal_rate=0.5123
+2026-04-14 22:09:09,359 [INFO] Metrics written to metrics.json.
+2026-04-14 22:09:09,359 [INFO] Job completed successfully. status=success
