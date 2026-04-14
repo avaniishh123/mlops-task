@@ -51,6 +51,14 @@ python run.py \
 
 ---
 
+## Running on Windows (PowerShell)
+
+PowerShell does not support `\` for line continuation.  
+Use a single-line command:
+
+```bash
+python run.py --input data.csv --config config.yaml --output metrics.json --log-file run.log
+
 ## Docker build & run
 
 ```bash
