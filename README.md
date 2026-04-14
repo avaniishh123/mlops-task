@@ -70,10 +70,11 @@ The container prints the final metrics JSON to stdout and exits 0 on success.
 2. Set `numpy.random.seed(seed)`.
 3. Load and validate CSV — must be non-empty and contain a `close` column.
 4. Compute `rolling_mean = close.rolling(window).mean()`.
-   - The first `window - 1` rows produce NaN and are **excluded** from signal
-     computation and the `rows_processed` count.
-5. `signal = 1 if close > rolling_mean else 0` for each valid row.
+   - The first `window - 1` rows produce NaN; NaN comparisons evaluate to False.
+5. `signal = 1 if close > rolling_mean else 0` for each row (NaN → 0).
 6. Emit `metrics.json` and `run.log`; print metrics to stdout.
+7. `rows_processed` = total rows (including NaN window rows).
+   `signal_rate` = mean(signal) across all rows.
 
 ---
 
@@ -82,10 +83,10 @@ The container prints the final metrics JSON to stdout and exits 0 on success.
 ```json
 {
   "version": "v1",
-  "rows_processed": 9996,
+  "rows_processed": 10000,
   "metric": "signal_rate",
-  "value": 0.5125,
-  "latency_ms": 23,
+  "value": 0.5123,
+  "latency_ms": 24,
   "seed": 42,
   "status": "success"
 }
