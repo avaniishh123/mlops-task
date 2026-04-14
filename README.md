@@ -125,6 +125,7 @@ Error output format:
 ## Snaps
 
 <img width="852" height="678" alt="Screenshot 2026-04-14 222622" src="https://github.com/user-attachments/assets/75b728bd-75fb-416f-900f-6ae9c94d7080" />
+
 <img width="1070" height="372" alt="Screenshot 2026-04-14 222731" src="https://github.com/user-attachments/assets/5c3cf995-9719-4115-b985-470619f10205" />
 
 
