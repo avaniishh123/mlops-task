@@ -1,9 +1,3 @@
-"""
-MLOps batch job: rolling-mean signal pipeline.
-Usage:
-    python run.py --input data.csv --config config.yaml \
-                  --output metrics.json --log-file run.log
-"""
 import argparse
 import json
 import logging
